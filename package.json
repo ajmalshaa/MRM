@@ -1,7 +1,7 @@
 {
   "name": "mrm",
   "version": "0.1.0",
-  "homepage": "https://ajmalshaa.github.io/MRM",
+  /*"homepage": "https://ajmalshaa.github.io/MRM",*/
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
