@@ -1,0 +1,25 @@
+/* Container that holds the layout */
+.container {
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: flex-start; /* Aligns the items at the top */
+    height: 100vh; /* Full viewport height */
+    padding: 20px;
+  }
+  
+  /* Main content section */
+  .main-content {
+    display: flex;
+    justify-content: space-between; /* Space between left-side and right-side */
+    width: 100%;
+  }
+  
+  /* Left side takes 80% of the width */
+  .left-side {
+    width: 80%;
+  }
+  
+  /* Right side takes 20% of the width */
+  .right-side {
+    width: 20%;
+  }
