@@ -42,7 +42,7 @@ useEffect(() => {
 , []);
   return (
     
-    <div style={{backgroundColor:'white',width:"95%",marginLeft:"25px",marginTop:"1px"}}>
+    <div style={{backgroundColor:'#212A34',width:"95%",marginLeft:"25px",marginTop:"1px"}}>
       <Row>
         <Col xs={12} md={8}>
        <Calendar
@@ -50,7 +50,7 @@ useEffect(() => {
       events={events}
       startAccessor="start"
       endAccessor="end"
-      style={{ marginTop:'50px',marginLeft:'50px',width:'95%',height:'400px', paddingTop:"25px"}}
+      style={{ marginTop:'50px',marginLeft:'25px',width:'95%',height:'400px', padding:"25px",backgroundColor:'#212A34',color:'#FFFFFF',boxShadow: '0px 10px 20px rgba(0, 0, 0, 0.7)',borderRadius:'8px'}}
     />
     <CalendarActivities />
     </Col>

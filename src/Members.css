@@ -11,12 +11,25 @@
   table {
     width: 100%;
     border-collapse: collapse;
+    background-color: #323232;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
   }
   
   th, td, tr {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
+    border-bottom: 1px solid #34495E;
+  }
+  th {
+    background-color: #212A34;  /* Dark background for table headers */
+    color: rgb(58, 190, 242);  /* Light text for headers */
+  }
+  
+  tr {
+    background-color: #2C3E50 ;  /* Darker background for rows */
+    color: #ECF0F1;  /* Light gray text */
   }
   a{
     text-decoration: none!important;

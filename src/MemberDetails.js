@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Button, ProgressBar, Accordion, Modal, Form, Row, Col } from 'react-bootstrap';
 import { useParams, useNavigate } from 'react-router-dom';
 import MemberActivities from './MemberActivities'
+import './MemberActivities.css'
 const MemberDetails = () => {
   // const memberURL = 'http://127.0.0.1:8000/memberdetails/';
   const memberURL = `${process.env.REACT_APP_API_URL}/memberdetails/`;
@@ -43,10 +44,10 @@ const MemberDetails = () => {
 
   const logo = './Images/MRMLogo.png';
   return (
-    <div className='row' style={{ backgroundColor: '#f8f9f7', margin: '20px', padding: '15px' }}>
+    <div className='row' style={{ backgroundColor: '#212A34 ', margin: '20px', padding: '15px',boxShadow: '0px 10px 20px rgba(0, 0, 0, 0.7)',borderRadius:'8px' }}>
       <div className="d-flex justify-content-end">
         <Button onClick={handleShow} className="btn btn-primary mt-4 shadow-sm bg-primary rounded text-white mx-2">Add Activities</Button>
-        <Button onClick={backClick} className="btn btn-secondary mt-4 shadow-sm bg-white rounded text-secondary">Back</Button>
+        <Button onClick={backClick} className="button-back btn btn-secondary mt-4 shadow-sm bg-white rounded text-secondary ">Back</Button>
         <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Activities</Modal.Title>
@@ -91,7 +92,7 @@ const MemberDetails = () => {
         </Modal.Footer>
       </Modal>
       </div>
-      <div className='col-md-3 shadow-lg p-3 mb-5 bg-white rounded' style={{ borderRadius: '10px', color: 'grey' }}>
+      <div className='col-md-3 shadow-lg p-3 mb-5 rounded' style={{ borderRadius: '8px', color: 'white', backgroundColor:'#34495E',boxShadow: '0px 10px 20px rgba(0, 0, 0, 0.7)' }}>
         {memberDetails.profile_picture && (
           <img
             // src={`http://127.0.0.1:8000${memberDetails.profile_picture}`}
@@ -121,12 +122,12 @@ const MemberDetails = () => {
       </div>
       <div className='col-md-9'>
         <div style={{ textAlign: 'left', marginLeft: '25px' }}>
-          <h4>Loans</h4>
+          <h4 style={{color: '#ECF0F1 '}}>Loans</h4>
           {loans.length===0?(<p style={{marginTop:'15px',color:'red'}}>No data found</p>):(
           <Accordion>
             
             {loans.map(item => (
-              <Accordion.Item eventKey={item.id} key={item.id}>
+              <Accordion.Item className='Accordion-Item' eventKey={item.id} key={item.id}>
                 <Accordion.Header>{item.LoanType}</Accordion.Header>
                 <Accordion.Body>
                   <p>Loan Amount: {item.LoanAmount}</p>

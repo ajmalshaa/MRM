@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: #ceddf5;
+  background-color: #212A34;
 }
 
 .App-logo {
@@ -34,7 +34,12 @@
   background-color: white!important;
   color:#61b3fb!important; /* Background color when button is active */
 }
-
+.rbc-off-range-bg {
+  background: #232323 !important;
+}
+.rbc-today {
+  background-color: #51585d !important;
+}
 .App-link {
   color: #61dafb;
 }
@@ -46,6 +51,10 @@
 }
 Nav.Link{
   margin-left: 10px;
+  
+}
+.nav-link{
+  color: #00FFEF !important;
 }
 
 .user-nav {

@@ -14,9 +14,9 @@ const Members = () => {
   },[])
 
   return (
-    <div className="members-tab bg-white mt-5" style={{width:"95%"}}>
+    <div className="members-tab bg-dark mt-5" style={{width:"95%"}}>
         
-      <table>
+      <table >
         <thead>
           <tr style={{color:"#3abef2"}}>
             <th>Member Name</th>
@@ -27,7 +27,7 @@ const Members = () => {
         </thead>
         <tbody>
         {members.map(item => (
-          <tr key={item.id}>
+          <tr key={item.id} style={{color:"#ffffff"}}>
           <td>{item.MemberName}</td>
           <td>{item.MemberEmail}</td>
           <Link to={`/Member_Details/${item.MemberID}`} style={{ textDecoration: 'none' }}>{item.MemberID}</Link>

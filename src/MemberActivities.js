@@ -101,7 +101,7 @@ function MemberActivities({ member }) {
             {data.length === 0 ? (
               <p style={{ marginTop: '15px', color: 'red' }}>No data found</p>
             ) : (
-              <table className="task-table" style={{ border: '1px solid black', width: '97%', borderCollapse: 'collapse' }}>
+              <table className="task-table-member" style={{ border: '1px solid black', width: '97%', borderCollapse: 'collapse' }}>
                 <thead>
                   <tr>
                     <th>Type</th>

@@ -27,7 +27,7 @@ function App() {
 
 
       
-      <Navbar bg="light" data-bs-theme="light">
+      <Navbar style={{ backgroundColor: '#34495E' }} data-bs-theme="light">
         <Container>
           <Navbar.Brand href="/"><img className='logo' src={logo}/></Navbar.Brand>
           <Nav className="me-auto">
@@ -35,8 +35,8 @@ function App() {
             <Nav.Link href="/Members">Members</Nav.Link>
             
             <Nav style={{ marginLeft: '850px',marginTop:'10px' }}>
-            <FontAwesomeIcon icon={faHouse} />
-            <NavItem >User</NavItem>
+            {/* <FontAwesomeIcon icon={faHouse} />
+            <NavItem >User</NavItem> */}
             </Nav>
             
           </Nav>

@@ -49,8 +49,8 @@ const CalendarActivities = () => {
  
   return (
 
-    <div style={{margin:'50px',width:'95%',paddingBottom:"50px"}}>
-        <Nav fill variant="tabs" defaultActiveKey="Loggedactivity" onSelect={handleSelect}>
+    <div style={{marginTop:'50px',marginLeft:'25px',width:'95%',paddingBottom:"50px"}}>
+        <Nav  fill variant="tabs" defaultActiveKey="Loggedactivity" className='nav-calendar' onSelect={handleSelect}>
       <Nav.Item>
         <Nav.Link eventKey="Loggedactivity" >Logged Activities</Nav.Link>
         
@@ -66,7 +66,7 @@ const CalendarActivities = () => {
      
     </Nav>
     {data.length===0?(<p style={{marginTop:'15px',color:'red'}}>No data found</p>):(
-    <table class="task-table" style={{ border: '1px solid black', width: '100%', borderCollapse: 'collapse' ,}}>
+    <table class="task-table" style={{  width: '100%', borderCollapse: 'collapse' ,}}>
         <thead>
           <tr>
             {/* <th style={{ border: '1px solid black', padding: '8px' }}>ID</th> */}
